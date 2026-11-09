@@ -1,0 +1,47 @@
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 16px 32px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 12px;
+}
+
+.name {
+  color: var(--ac);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .footer a:hover {
+    color: var(--ac);
+  }
+}
+
+.dates {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px;
+  }
+}
