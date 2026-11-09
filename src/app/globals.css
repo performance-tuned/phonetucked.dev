@@ -1,9 +1,29 @@
+:root {
+  --ac: #00aeef;
+  --canvas: #ffffff;
+  --ink: #111111;
+  --soft: #4a4a4a;
+  --dim: #767676;
+  --flag: #c4006b;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.45;
 }
