@@ -1,4 +1,5 @@
 import { builds } from "@/content/builds";
+import { galleries } from "@/content/galleries";
 import Kinds from "./kinds";
 import styles from "./page.module.css";
 
@@ -9,7 +10,7 @@ export default function Home() {
         index of builds & galleries by{" "}
         <span className={styles.name}>phonetucked</span>, engineer
       </h1>
-      <Kinds pages={Object.keys(builds)} />
+      <Kinds pages={[...Object.keys(builds), ...Object.keys(galleries)]} />
       <footer className={styles.footer}>
         <a href="mailto:one@phonetucked.dev">one@phonetucked.dev</a>
         <span>macro economic protocols</span>
