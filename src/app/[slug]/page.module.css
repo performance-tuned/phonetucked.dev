@@ -1,0 +1,86 @@
+.page {
+  min-height: 100dvh;
+  padding: 48px 16px 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: inherit;
+  color: var(--ac);
+}
+
+.header a,
+.links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.readme {
+  max-width: 64ch;
+  margin: 14vh auto 0;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.links {
+  max-width: 64ch;
+  margin: 24px auto 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.links li::before {
+  content: "> ";
+}
+
+.shots {
+  display: flex;
+  gap: 16px;
+  margin-top: 8vh;
+}
+
+.shots a {
+  flex: var(--ratio) 1 0;
+  min-width: 0;
+}
+
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (hover: hover) {
+  .header a:hover,
+  .links a:hover {
+    color: var(--ac);
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px;
+  }
+
+  .readme,
+  .links {
+    font-size: 12px;
+  }
+
+  .shots {
+    flex-direction: column;
+  }
+
+  .shots a {
+    flex: none;
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { projects, type Project } from "@/content/projects";
 import styles from "./kinds.module.css";
@@ -8,7 +9,7 @@ type Kind = Project["kind"];
 
 const kinds: Kind[] = ["build", "gallery"];
 
-export default function Kinds() {
+export default function Kinds({ pages }: { pages: string[] }) {
   const [open, setOpen] = useState<Kind | null>(null);
 
   return (
@@ -37,6 +38,8 @@ export default function Kinds() {
                       >
                         {project.name}
                       </a>
+                    ) : pages.includes(project.slug) ? (
+                      <Link href={`/${project.slug}`}>{project.name}</Link>
                     ) : (
                       project.name
                     )}
