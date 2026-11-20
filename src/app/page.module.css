@@ -44,4 +44,12 @@
   .page {
     padding: 16px;
   }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
 }
