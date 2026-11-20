@@ -11,6 +11,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "github",
+    name: "github",
+    kind: "build",
+    date: "2026-11-20",
+    external: { url: "https://github.com/performance-tuned", via: "github" },
+  },
+  {
     slug: "nokia-bell-labs",
     name: "nokia bell labs",
     kind: "gallery",
