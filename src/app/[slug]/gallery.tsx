@@ -12,6 +12,7 @@ function shuffle(count: number) {
 }
 
 function place(cell: number, photo: Photo) {
+  const ratio = photo.height / photo.width;
   return {
     "--c": cell % 4,
     "--r": Math.floor(cell / 4),
@@ -19,7 +20,8 @@ function place(cell: number, photo: Photo) {
     "--r2": Math.floor(cell / 2),
     "--x": Math.random(),
     "--y": Math.random(),
-    "--ratio": photo.height / photo.width,
+    "--ratio": ratio,
+    "--k": Math.min(0.6, 0.95 / ratio),
   } as CSSProperties;
 }
 
