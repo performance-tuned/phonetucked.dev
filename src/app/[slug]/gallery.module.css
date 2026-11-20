@@ -1,15 +1,15 @@
 .field {
+  --s: calc((100vw - 32px) / 4);
   position: relative;
-  height: calc(100dvh - 140px);
+  height: calc(var(--s) * var(--rows));
   margin-top: 24px;
 }
 
 .photo {
-  --w: clamp(120px, 18vw, 240px);
   position: absolute;
-  width: var(--w);
-  left: calc((100% - var(--w)) * var(--x));
-  top: calc((100% - var(--w)) * var(--y));
+  width: calc(var(--s) * 0.6);
+  left: calc(var(--s) * (var(--c) + var(--x) * 0.4));
+  top: calc(var(--s) * (var(--r) + var(--y) * (1 - 0.6 * var(--ratio))));
 }
 
 .photo img {
@@ -18,8 +18,14 @@
   height: auto;
 }
 
-@media (hover: hover) {
-  .photo:hover {
-    z-index: 1;
+@media (max-width: 640px) {
+  .field {
+    --s: calc((100vw - 32px) / 2);
+    height: calc(var(--s) * var(--rows2));
+  }
+
+  .photo {
+    left: calc(var(--s) * (var(--c2) + var(--x) * 0.4));
+    top: calc(var(--s) * (var(--r2) + var(--y) * (1 - 0.6 * var(--ratio))));
   }
 }
