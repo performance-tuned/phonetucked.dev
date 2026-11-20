@@ -41,7 +41,7 @@ export const projects: Project[] = [
     kind: "build",
     date: "2026-07-20",
     external: {
-      url: "https://www.are.na/phonetucked/sd-net-1-5",
+      url: "https://www.are.na/standard-znnmqwgrka8/sd-net-1-5",
       via: "are.na",
     },
   },
