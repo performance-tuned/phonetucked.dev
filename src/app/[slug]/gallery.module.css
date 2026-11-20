@@ -7,9 +7,9 @@
 
 .photo {
   position: absolute;
-  width: calc(var(--s) * 0.6);
-  left: calc(var(--s) * (var(--c) + var(--x) * 0.4));
-  top: calc(var(--s) * (var(--r) + var(--y) * (1 - 0.6 * var(--ratio))));
+  width: calc(var(--s) * var(--k));
+  left: calc(var(--s) * (var(--c) + var(--x) * (1 - var(--k))));
+  top: calc(var(--s) * (var(--r) + var(--y) * (1 - var(--k) * var(--ratio))));
 }
 
 .photo img {
@@ -25,7 +25,9 @@
   }
 
   .photo {
-    left: calc(var(--s) * (var(--c2) + var(--x) * 0.4));
-    top: calc(var(--s) * (var(--r2) + var(--y) * (1 - 0.6 * var(--ratio))));
+    left: calc(var(--s) * (var(--c2) + var(--x) * (1 - var(--k))));
+    top: calc(
+      var(--s) * (var(--r2) + var(--y) * (1 - var(--k) * var(--ratio)))
+    );
   }
 }
