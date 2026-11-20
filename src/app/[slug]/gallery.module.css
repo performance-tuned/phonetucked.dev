@@ -1,0 +1,25 @@
+.field {
+  position: relative;
+  height: calc(100dvh - 140px);
+  margin-top: 24px;
+}
+
+.photo {
+  --w: clamp(120px, 18vw, 240px);
+  position: absolute;
+  width: var(--w);
+  left: calc((100% - var(--w)) * var(--x));
+  top: calc((100% - var(--w)) * var(--y));
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (hover: hover) {
+  .photo:hover {
+    z-index: 1;
+  }
+}
