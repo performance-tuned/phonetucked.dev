@@ -19,7 +19,7 @@ export default async function Page({ params }: PageProps<"/[slug]">) {
   return (
     <main className={styles.page}>
       <header className={styles.header}>
-        <Link href="/">← back</Link>
+        <Link href="/">{"< back"}</Link>
         <h1>{project.name}</h1>
       </header>
       <pre className={styles.readme}>{build.readme}</pre>
