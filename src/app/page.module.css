@@ -25,14 +25,8 @@
 }
 
 .footer a {
-  color: inherit;
+  color: var(--ac);
   text-decoration: none;
-}
-
-@media (hover: hover) {
-  .footer a:hover {
-    color: var(--ac);
-  }
 }
 
 .dates {
