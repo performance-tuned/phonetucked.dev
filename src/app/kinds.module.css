@@ -28,9 +28,8 @@
 
 @media (max-width: 640px) {
   .list {
-    gap: 0;
+    gap: 5vh;
     padding-top: 24px;
     font-size: 12px;
-    line-height: 1.6;
   }
 }
