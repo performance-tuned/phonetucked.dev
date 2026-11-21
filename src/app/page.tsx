@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className={styles.page}>
       <h1 className={styles.title}>
-        index of builds & galleries by{" "}
-        <span className={styles.name}>phonetucked</span>, engineer
+        index of builds by <span className={styles.name}>phonetucked</span>,
+        engineer
       </h1>
       <Kinds pages={[...Object.keys(builds), ...Object.keys(galleries)]} />
       <footer className={styles.footer}>
