@@ -55,7 +55,7 @@ client: @tigermaf1a`,
     links: [],
     wide: true,
     embed:
-      "https://embed.figma.com/deck/kT6jdBzOF3wQWnFXVmZts2?embed-host=phonetucked.dev",
+      "https://embed.figma.com/deck/kT6jdBzOF3wQWnFXVmZts2?embed-host=phonetucked.dev&footer=false&theme=dark",
     shots: [
       {
         file: "collage.png",
