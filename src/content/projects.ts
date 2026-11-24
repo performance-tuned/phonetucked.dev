@@ -16,6 +16,11 @@ export const projects: Project[] = [
     external: { url: "https://github.com/performance-tuned", via: "github" },
   },
   {
+    slug: "ankle",
+    name: "ANKLE",
+    date: "2026-11-23",
+  },
+  {
     slug: "plenty-missed-calls",
     name: "plenty missed calls",
     date: "2026-09-12",
