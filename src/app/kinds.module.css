@@ -34,7 +34,7 @@
 @media (max-width: 640px) {
   .list {
     gap: 20px;
-    padding-top: 24px;
+    padding-block: 24px;
     font-size: 12px;
   }
 }
