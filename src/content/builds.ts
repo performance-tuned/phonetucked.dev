@@ -1,5 +1,6 @@
 export type Shot = {
   file: string;
+  href?: string;
   width: number;
   height: number;
   alt: string;
@@ -9,6 +10,8 @@ export type Build = {
   readme: string;
   links: { label: string; url: string }[];
   shots: Shot[];
+  wide?: boolean;
+  embed?: string;
 };
 
 export const builds: Record<string, Build> = {
@@ -44,6 +47,22 @@ client: @tigermaf1a`,
         width: 3292,
         height: 2068,
         alt: "tigernetwork canvas, filled",
+      },
+    ],
+  },
+  "field-guide": {
+    readme: "",
+    links: [],
+    wide: true,
+    embed:
+      "https://embed.figma.com/deck/kT6jdBzOF3wQWnFXVmZts2?embed-host=phonetucked.dev",
+    shots: [
+      {
+        file: "collage.png",
+        href: "https://www.figma.com/deck/kT6jdBzOF3wQWnFXVmZts2",
+        width: 5760,
+        height: 4320,
+        alt: "from, 1/PT FIELD GUIDE",
       },
     ],
   },

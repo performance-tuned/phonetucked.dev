@@ -16,7 +16,7 @@ export default function Home() {
         <span>macro economic protocols</span>
         <span className={styles.dates}>
           <span>pub 2025 - 06 - 09</span>
-          <span>upd 2026 - 11 - 23</span>
+          <span>upd 2026 - 11 - 24</span>
         </span>
       </footer>
     </main>
