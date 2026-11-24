@@ -16,6 +16,11 @@ export const projects: Project[] = [
     external: { url: "https://github.com/performance-tuned", via: "github" },
   },
   {
+    slug: "field-guide",
+    name: "from, 1/PT FIELD GUIDE",
+    date: "2026-11-24",
+  },
+  {
     slug: "ankle",
     name: "ANKLE",
     date: "2026-11-23",
@@ -54,10 +59,5 @@ export const projects: Project[] = [
     slug: "protocol-accessories",
     name: "protocol accessories",
     date: "2026-06-19",
-  },
-  {
-    slug: "phonetucked-benchmark",
-    name: "benchmark",
-    date: "2025-06-25",
   },
 ];

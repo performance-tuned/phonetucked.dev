@@ -48,6 +48,24 @@
   margin-top: 8vh;
 }
 
+.page:has(.wide) {
+  display: flex;
+  flex-direction: column;
+}
+
+.wide {
+  margin: auto -16px 0;
+  padding-block: 24px;
+}
+
+.embed {
+  flex: none;
+  width: calc(100% + 32px);
+  aspect-ratio: 16 / 9;
+  margin: 0 -16px auto;
+  border: 0;
+}
+
 .shots a {
   flex: var(--ratio) 1 0;
   min-width: 0;

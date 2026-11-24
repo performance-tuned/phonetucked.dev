@@ -25,15 +25,4 @@ export const galleries: Record<string, Photo[]> = {
     { file: "IMG_0248.jpg", width: 1500, height: 2000 },
     { file: "IMG_0249.jpg", width: 1500, height: 2000 },
   ],
-  "phonetucked-benchmark": [
-    { file: "FullSizeRender-7.JPEG", width: 1750, height: 1345 },
-    { file: "IMG_6248.JPEG", width: 1750, height: 1313 },
-    { file: "IMG_6263.JPEG", width: 1536, height: 2048 },
-    { file: "IMG_6275.JPEG", width: 1750, height: 1313 },
-    { file: "IMG_6282.JPEG", width: 1750, height: 1313 },
-    { file: "IMG_6250.JPEG", width: 1350, height: 2328 },
-    { file: "IMG_7505.JPEG", width: 1750, height: 1313 },
-    { file: "image001.JPG", width: 1428, height: 842 },
-    { file: "IMG_6030.JPG", width: 1750, height: 1891 },
-  ],
 };

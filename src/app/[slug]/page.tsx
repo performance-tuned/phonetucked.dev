@@ -23,22 +23,29 @@ export default async function Page({ params }: PageProps<"/[slug]">) {
       </header>
       {build && (
         <>
-          <pre className={styles.readme}>{build.readme}</pre>
-          <ul className={styles.links}>
-            {build.links.map((link) => (
-              <li key={link.url}>
-                <a href={link.url} target="_blank" rel="noreferrer">
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className={styles.shots}>
+          {build.readme && <pre className={styles.readme}>{build.readme}</pre>}
+          {build.links.length > 0 && (
+            <ul className={styles.links}>
+              {build.links.map((link) => (
+                <li key={link.url}>
+                  <a href={link.url} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div
+            className={
+              build.wide ? `${styles.shots} ${styles.wide}` : styles.shots
+            }
+          >
             {build.shots.map((shot) => (
               <a
                 key={shot.file}
-                href={`/${slug}/${shot.file}`}
+                href={shot.href ?? `/${slug}/${shot.file}`}
                 target="_blank"
+                rel="noreferrer"
                 style={{ "--ratio": shot.width / shot.height } as CSSProperties}
               >
                 <Image
@@ -55,6 +62,15 @@ export default async function Page({ params }: PageProps<"/[slug]">) {
               </a>
             ))}
           </div>
+          {build.embed && (
+            <iframe
+              className={styles.embed}
+              src={build.embed}
+              title={project.name}
+              loading="lazy"
+              allowFullScreen
+            />
+          )}
         </>
       )}
       {photos && <Gallery slug={slug} photos={photos} />}
