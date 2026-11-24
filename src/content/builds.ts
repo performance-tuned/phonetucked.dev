@@ -53,8 +53,8 @@ client: @tigermaf1a`,
 an intranet browser where every word is a World, with built-in creative and developer tools for users who want to build culture
 
 role: head of infrastructure & system integrity (november 2026 - present)
-client: @aleqth/ankle.studio`,
-    links: [{ label: "ankle.studio", url: "https://ankle.studio" }],
+client: @aleqth/ankle.website`,
+    links: [{ label: "ankle.website", url: "https://ankle.website" }],
     shots: [],
   },
   "sd-net-2-0": {

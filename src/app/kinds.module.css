@@ -21,6 +21,10 @@
   text-decoration: none;
 }
 
+.list a:active {
+  color: var(--ac);
+}
+
 @media (hover: hover) {
   .list a:hover {
     color: var(--ac);
