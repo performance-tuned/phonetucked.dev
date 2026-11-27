@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { builds } from "@/content/builds";
 import { galleries } from "@/content/galleries";
 import Kinds from "./kinds";
@@ -12,6 +13,7 @@ export default function Home() {
       </h1>
       <Kinds pages={[...Object.keys(builds), ...Object.keys(galleries)]} />
       <footer className={styles.footer}>
+        <Image src="/logo.svg" alt="" width={56} height={34} />
         <a href="mailto:one@phonetucked.dev">one@phonetucked.dev</a>
         <span className={styles.dates}>
           <span>pub 2025 - 06 - 09</span>
