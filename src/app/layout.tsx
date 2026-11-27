@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "macro economic protocols",
+  title: "Performance - Tuned",
   description: "an index of builds and galleries by phonetucked.",
 };
 
