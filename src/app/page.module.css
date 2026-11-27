@@ -31,7 +31,7 @@
 
 .dates {
   display: flex;
-  gap: 24px;
+  gap: 12px;
 }
 
 @media (max-width: 640px) {
