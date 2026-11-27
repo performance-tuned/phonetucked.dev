@@ -42,15 +42,6 @@ export const projects: Project[] = [
     date: "2026-08-02",
   },
   {
-    slug: "sd-net-1-5",
-    name: "sd - net 1.5",
-    date: "2026-07-20",
-    external: {
-      url: "https://www.are.na/standard-znnmqwgrka8/sd-net-1-5",
-      via: "are.na",
-    },
-  },
-  {
     slug: "tigernetwork",
     name: "tigernetwork",
     date: "2026-07-10",
@@ -59,5 +50,14 @@ export const projects: Project[] = [
     slug: "protocol-accessories",
     name: "protocol accessories",
     date: "2026-06-19",
+  },
+  {
+    slug: "sd-net-1-5",
+    name: "sd - net 1.5",
+    date: "2026-07-20",
+    external: {
+      url: "https://www.are.na/standard-znnmqwgrka8/sd-net-1-5",
+      via: "are.na",
+    },
   },
 ];
